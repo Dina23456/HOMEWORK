@@ -1,0 +1,42 @@
+
+.e{ background-color:black;
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.g{
+    background-color:orangered;
+    width: 400px;
+    height: 100px;
+}
+.a{
+    background-color: red;
+    width: 100px;
+    height: 200px;
+}
+.b{
+    background-color:  green;
+    width: 100px;
+    height: 200px;
+}
+.c{
+    background-color:cadetblue;
+    width: 100px;
+    height: 200px;
+}
+.d{
+    background-color:black;
+    width: 100px;
+    height: 200px;
+}
+
+.f{
+    background-color:orangered;
+    width: 400px;
+    height: 100px;
+}
