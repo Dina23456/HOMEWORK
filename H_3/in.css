@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+.e{
+    padding: 5px;
+    background-color:black;
+    width: 400px;
+    height: 400px;
+}
+.g{
+    float: left;
+    background-color:orangered;
+    width: 400px;
+    height: 100px;
+}
+.a{
+    float: left;
+    background-color: red;
+    width: 100px;
+    height: 200px;
+}
+.b{
+    float: left;
+    background-color:  green;
+    width: 100px;
+    height: 200px;
+ }
+.c{
+    float: left;
+    background-color:cadetblue;
+    width: 100px;
+    height: 200px;
+}
+.d{
+    float: left;
+    background-color:black;
+    width: 100px;
+    height: 200px;
+}
+
+.f{
+    float:left;
+    background-color:orangered;
+    width: 400px;
+    height: 100px;
+}
