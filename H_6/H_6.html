@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tit*-le</title>
+</head>
+<body>
+<script>
+
+  // --створити масив та вивести його в консоль: - з 5 числових значень
+  let num= [ 2,56,-765,64,53]
+  console.log(num);
+   // - з 5 стічкових значень
+  let str=['Hello', 'world', 'cat', 'dog','play']
+  console.log(str);
+
+  // - з 5 значень стрічкового, числового та булевого типу
+  let zn=[{Num1:175, string1:'Hi',bol1:true},
+    {Num1:15, string1:'Hello',bol1:false},
+    {Num1:5, string1:'Hat',bol1:true},
+    {Num1:16, string1:'cat',bol1:false},
+    {Num1:-543, string1:'play',bol1:true}]
+  console.log(zn);
+
+  // -- Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу. Вивести в консоль
+  let il=[];
+   il[0]= 23,
+   il[30]= 'rew',
+   il[6]= true,
+   il[8]= false,
+   il[2]= '23',
+   il[44]= 'bhvc',
+   console.log(il[3]);
+
+  // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
+  for (let i = 0; i <= 10; i++) {
+    document.write('<div>dsdfgvhjkkuytrew</div>');
+  }
+
+  // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
+  for (let i = 0; i< 10; i++) {
+    document.write(`<div>dsdfgvhjkkuytrew ${i}</div>`)}
+
+  // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+    let i=0;
+    while ( i< 20) {
+    document.write('<h1>mnmnmnmnmnmnmnmn</h1>'),
+    i++}
+ // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+   let i=0;
+   while ( i< 20) {
+   document.write(`<h1>dgfd dfgfd dddddddd ${i}</h1>`),
+   i++}
+  // - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+  let a=[23,45,44,76,6,4,1,-98,7,2];
+  for (let k = 0; k<a.length ; k++) {
+  console.log(a[k])}
+  // - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
+  let b=['gggg','hhhhhh','yyyyyy','oooo','ddssddds','sd','eeee','ettt','uuuu','zzzz'];
+  for (let o = 0; o< b.length; o++) {
+   console.log(b[o])}
+  // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+  let b=['gggg',true,'yyyy',23,false,'sd','ee','99',-99875,'zzzz'];
+  for (let o = 0; o< b.length; o++) {
+   console.log(b[o])}
+
+  // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+  let il=[];
+   il[0]= 23,
+   il[1]= 'rew',
+   il[2]= true,
+   il[3]= false,
+     il[4]= '23',
+     il[5]= 'bhvc',
+   il[6]= '23',
+   il[7]= 'bhvc',
+     il[8]= 1,
+     il[9]= 'ropjkh';
+  for (let o = 0; o< il.length; o++) {
+  console.log(il[o])}
+  // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+  let a=0;
+  for (let i = 0; i< 10; i++) {
+    a++;
+  console.log(a);
+    document.write(a)
+  }
+  // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+  let a=0;
+  for (let i = 0; i< 100; i++) {
+    a++;
+    console.log(a);
+    document.write(a)
+  }
+  // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+  let a=0;
+  for (let i = 0; i< 100; i+=2) {
+    a++;
+    console.log(a);
+    document.write(a)
+  }
+  // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+  let a=0;
+  while ( a< 100) {
+    a+=2;
+    console.log(a);
+    document.write(a)}
+
+  //- Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+
+  for (let i = 0; i < 100; i++) {
+     if (i %2) {
+      console.log(i);
+      document.write(i);
+    }}
+
+  // - Відтворити роботу годинника, відрахувавши 2 хвилини (2 цикли! 1й - хвилини, 2й - секунди)
+  for (let i = 0; i < 2; i++) {
+  for (let j = 0; j < 60; j++)
+   { console.log(i+':'+j)}}
+  // - Відтворити роботу годинника, відрахувавши  2 години 20 хвилини (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
+  for (let a = 0; a < 2; a++) {
+    for (let i = 0; i < 60; i++)
+    { for (let j = 0; j < 60; j++)
+    {console.log(a+':'+i+':'+j)}}}
+
+  // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+  //   1. перебрати його циклом while
+  let a=[2,17,13,6,22,31,45,66,100,-18];
+  let i=0;
+  while (i<a.length){
+    console.log(a[i])
+    i++}
+  //   2. перебрати його циклом for
+  let b=[2,17,13,6,22,31,45,66,100,-18];
+  for(let i = 0; i < b.length; i++){
+    console.log(b[i])}
+  //   3. перебрати циклом while та вивести  числа тільки з непарним індексом
+  let a=[2,17,13,6,22,31,45,66,100,-18];
+  let i=0;
+  while (i<a.length){
+    if (i%2){
+    console.log(a[i])}
+    i++;}
+  // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+  let a=[2,17,13,6,22,31,45,66,100,-18];
+  for (let i=0;i<a.length;i++){
+  if (i%2){
+  console.log(a[i])}}
+  //5. перебрати циклом while та вивести  числа тільки парні  значення
+  let a=[2,17,13,6,22,31,45,66,100,-18];
+  let i=0;
+  while (i<a.length){
+    if (i%2==0){
+    console.log(a[i])}
+    i++}
+  // 6. перебрати циклом for та вивести  числа тільки парні  значення
+  let a=[2,17,13,6,22,31,45,66,100,-18];
+  for (let i=0;i<a.length;i++){
+  if (i%2==0){
+  console.log(a[i])}}
+  // 7. замінити кожне число кратне 3 на слово "okten"
+  let a=[2,17,13,6,22,31,45,66,100,-18];
+  console.log(a);
+  for (let i=0;i<a.length;i++){
+    if (i%3==0){
+    a[i]='okten'}
+  }
+
+</script>
+</body>
+</html>
