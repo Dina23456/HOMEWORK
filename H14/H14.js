@@ -1,15 +1,15 @@
-// Реалізувати друкарську машинку.
-//   У вас є текст "Hello World".
-//   Ваша функція має друкувати цей текст по 1 симоволу в браузері.
-//   КОЖНА нова буква має бути з РАНДОМНОЮ заутримкою від 0.1 до 1 секунди.
-//   Цим самим ви маєте симулювати написання даного тексту юзером.
-//   Приклад: "Hello"
-// Затримки:
-//   H (затримка 0.6)
-// e (затримка 0.1)
-// l (затримка 0.3)
-// l (затримка 0.7)
-// о (затримка 1)
+// // Реалізувати друкарську машинку.
+// //   У вас є текст "Hello World".
+// //   Ваша функція має друкувати цей текст по 1 симоволу в браузері.
+// //   КОЖНА нова буква має бути з РАНДОМНОЮ заутримкою від 0.1 до 1 секунди.
+// //   Цим самим ви маєте симулювати написання даного тексту юзером.
+// //   Приклад: "Hello"
+// // Затримки:
+// //   H (затримка 0.6)
+// // e (затримка 0.1)
+// // l (затримка 0.3)
+// // l (затримка 0.7)
+// // о (затримка 1)
 function h() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -17,7 +17,6 @@ function h() {
     }, Math.random() * (1001 - 1) + 1);
   })
 }
-
 function e() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -25,7 +24,6 @@ function e() {
     }, Math.random() * (1001 - 1) + 1);
   })
 }
-
 function l() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -33,7 +31,6 @@ function l() {
     }, Math.random() * (1001 - 1) + 1);
   })
 }
-
 function o() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -49,7 +46,6 @@ function probil() {
     }, Math.random() * (1001 - 1) + 1);
   })
 }
-
 function w() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -57,7 +53,6 @@ function w() {
     }, Math.random() * (1001 - 1) + 1);
   })
 }
-
 function r() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -65,7 +60,6 @@ function r() {
     }, Math.random() * (1001 - 1) + 1);
   })
 }
-
 function d() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -73,8 +67,6 @@ function d() {
     }, Math.random() * (1001 - 1) + 1);
   })
 }
-
-
 async function druk() {
   const word1 = await h();
   console.log(word1);
@@ -101,3 +93,35 @@ async function druk() {
 }
 
 druk()
+/////////////////////////////////////////////
+///////////2 спосіб//////////////////////////
+////////////////////////////////////////////
+///////////////////////////////////////////
+function helloWorld(string) {
+  setTimeout(() => {
+    console.log(string);
+  }, Math.random() * (1001 - 1) + 1);
+}
+helloWorld(`H`,()=>{
+    helloWorld(`e`,()=>{
+      helloWorld(`l`,()=>{
+        helloWorld(`l`,()=>{
+          helloWorld(`o`,()=>{
+            helloWorld(` `,()=>{
+              helloWorld(`W`,()=>{
+                helloWorld(`o`,()=>{
+                  helloWorld(`r`,()=>{
+                    helloWorld(`l`,()=>{
+                      helloWorld(`d`,()=>{
+                      })
+                    })
+                  })
+                })
+              })
+            })
+          })
+        })
+      })
+    })
+})
+
