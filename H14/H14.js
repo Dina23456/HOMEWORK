@@ -10,118 +10,141 @@
 // // l (затримка 0.3)
 // // l (затримка 0.7)
 // // о (затримка 1)
-function h() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve('H');
-    }, Math.random() * (1001 - 1) + 1);
-  })
-}
-function e() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve('e');
-    }, Math.random() * (1001 - 1) + 1);
-  })
-}
-function l() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve('l');
-    }, Math.random() * (1001 - 1) + 1);
-  })
-}
-function o() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve('o');
-    }, Math.random() * (1001 - 1) + 1);
-  })
+
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve('H');
+//     }, Math.random() * (1001 - 1) + 1);
+//   })
+// }
+// function e() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve('e');
+//     }, Math.random() * (1001 - 1) + 1);
+//   })
+// }
+// function l() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve('l');
+//     }, Math.random() * (1001 - 1) + 1);
+//   })
+// }
+// function o() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve('o');
+//     }, Math.random() * (1001 - 1) + 1);
+//   })
+// }
+//
+// function probil() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve('');
+//     }, Math.random() * (1001 - 1) + 1);
+//   })
+// }
+// function w() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve('W');
+//     }, Math.random() * (1001 - 1) + 1);
+//   })
+// }
+// function r() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve('r');
+//     }, Math.random() * (1001 - 1) + 1);
+//   })
+// }
+// function d() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve('d');
+//     }, Math.random() * (1001 - 1) + 1);
+//   })
+// }
+// async function druk() {
+//   const word1 = await h();
+//   document.write(word1);
+//   const word2 = await e();
+//   document.write(word2);
+//   const word3 = await l();
+//   document.write(word3);
+//   const word4 = await l();
+//   document.write(word4);
+//   const word5 = await o();
+//   document.write(word5);
+//   const word = await probil();
+//   document.write(word);
+//   const word6 = await w();
+//   document.write(word6);
+//   const word7 = await o();
+//   document.write(word7);
+//   const word8 = await r();
+//   document.write(word8);
+//   const word9 = await l();
+//   document.write(word9);
+//   const word10 = await d();
+//   document.write(word10);
+// }
+//
+// druk()}
+// /////////////////////////////////////////////
+// ///////////2 спосіб//////////////////////////
+// ////////////////////////////////////////////
+// ///////////////////////////////////////////
+// const hello = document.getElementById('hello');
+// hello.innerText=ev=>{
+//   function h() {
+// function helloWorld(string) {
+//   setTimeout(() => {
+//     console.log(string);
+//     document.write(string)
+//   }, Math.random() * (1001 - 1) + 1);
+// }
+// helloWorld(`H`,()=>{
+//     helloWorld(`e`,()=>{
+//       helloWorld(`l`,()=>{
+//         helloWorld(`l`,()=>{
+//           helloWorld(`o`,()=>{
+//             helloWorld(` `,()=>{
+//               helloWorld(`W`,()=>{
+//                 helloWorld(`o`,()=>{
+//                   helloWorld(`r`,()=>{
+//                     helloWorld(`l`,()=>{
+//                       helloWorld(`d`,()=>{
+//                       })
+//                     })
+//                   })
+//                 })
+//               })
+//             })
+//           })
+//         })
+//       })
+//     })
+// })}}
+//
+let hello = document.getElementById('hello')
+let btn = document.getElementById('btn')
+let write = document.getElementById('write');
+
+btn.onclick = async() => {
+  write.innerText = "";
+  for (let i = 0; i < hello.value.length; i++)
+    await arrey(hello.value[i])
 }
 
-function probil() {
-  return new Promise((resolve) => {
+function arrey(string){
+  return new Promise(resolve => {
     setTimeout(() => {
-      resolve('');
+      console.log(string)
+      write.innerText += string
+      resolve()
     }, Math.random() * (1001 - 1) + 1);
   })
 }
-function w() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve('W');
-    }, Math.random() * (1001 - 1) + 1);
-  })
-}
-function r() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve('r');
-    }, Math.random() * (1001 - 1) + 1);
-  })
-}
-function d() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve('d');
-    }, Math.random() * (1001 - 1) + 1);
-  })
-}
-async function druk() {
-  const word1 = await h();
-  console.log(word1);
-  const word2 = await e();
-  console.log(word2);
-  const word3 = await l();
-  console.log(word3);
-  const word4 = await l();
-  console.log(word4);
-  const word5 = await o();
-  console.log(word5);
-  const word = await probil();
-  console.log(word);
-  const word6 = await w();
-  console.log(word6);
-  const word7 = await o();
-  console.log(word7);
-  const word8 = await r();
-  console.log(word8);
-  const word9 = await l();
-  console.log(word9);
-  const word10 = await d();
-  console.log(word10);
-}
-
-druk()
-/////////////////////////////////////////////
-///////////2 спосіб//////////////////////////
-////////////////////////////////////////////
-///////////////////////////////////////////
-function helloWorld(string) {
-  setTimeout(() => {
-    console.log(string);
-  }, Math.random() * (1001 - 1) + 1);
-}
-helloWorld(`H`,()=>{
-    helloWorld(`e`,()=>{
-      helloWorld(`l`,()=>{
-        helloWorld(`l`,()=>{
-          helloWorld(`o`,()=>{
-            helloWorld(` `,()=>{
-              helloWorld(`W`,()=>{
-                helloWorld(`o`,()=>{
-                  helloWorld(`r`,()=>{
-                    helloWorld(`l`,()=>{
-                      helloWorld(`d`,()=>{
-                      })
-                    })
-                  })
-                })
-              })
-            })
-          })
-        })
-      })
-    })
-})
-
